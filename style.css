@@ -1,0 +1,20 @@
+body{
+    padding: 90px;
+    margin: 90px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.ahe{
+    text-decoration: none;
+    color: red;
+}
+
+.ahe:hover{
+    text-decoration: none;
+    color: skyblue;
+}
+
+.card{
+    float: left;
+    margin-left: 10px;
+}
