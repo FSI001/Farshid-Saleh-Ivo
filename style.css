@@ -1,20 +1,95 @@
-body{
-    padding: 90px;
-    margin: 90px;
-    font-family: 'Space Grotesk', sans-serif;
+body {
+    padding: 10px;
+    color: aliceblue;
+    background-color: #333;
+    font-family: "Handjet", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "ELGR" 1, "ELSH" 2;
 }
 
-.ahe{
+.tBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 30px;
+    list-style-type: none;
+}
+
+a {
+    color: rgb(117, 117, 117);
     text-decoration: none;
-    color: red;
+    font-size: 40px;
+    transition: color 0.3s ease-in;
 }
 
-.ahe:hover{
-    text-decoration: none;
-    color: skyblue;
+a:hover {
+    color: aliceblue;
 }
 
-.card{
-    float: left;
-    margin-left: 10px;
+.fContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 30px;
+}
+
+.fContainerDiv1 {
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.containerText {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.sContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .fContainerDiv1 {
+        display: none;
+    }
+
+    .tBar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 40px;
+        color: rgb(117, 117, 117);
+        margin: 20px 30px;
+        width: 100%;
+        z-index: 21;
+    }
+
+    .hamburger:hover {
+        color: aliceblue;
+    }
+}
+
+/* Default style: hide the hamburger menu on large screens */
+.hamburger {
+    display: none;
+}
+
+.showNav {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    list-style-type: none;
+    margin: 10px 30px;
 }
